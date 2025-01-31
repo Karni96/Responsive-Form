@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 20px;
+    padding: 20px; 
+}
+
+form{
+    border: 1px solid black;
+    width: 50%;    
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 52px rgb(102, 160, 197);
+    font-weight: bold;
+    font-size: small;
+    padding-right: 20px;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+form .container2 .inputbox{
+    width: calc(100%/2 - 20px );
+    margin: 10px;
+}
+
+form .container2 .inputbox input{
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+}
+form .container2 .inputbox select{
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nextbutton{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    color: white;  
+    
+      
+    
+}
+.button{
+    background-color: rgb(7, 14, 64);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+}
+
+
+@media (max-width: 480px) {
+    label {
+        font-size: 12px;
+    }
+
+    input, select {
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .inputbox {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+}

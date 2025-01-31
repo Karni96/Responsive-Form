@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <!-- <div class="registration">registration form</div> -->
+        <form action="" >
+            <div class="container2">
+
+                    <div class="inputbox">
+                        <label for="Budget-Name" class="Budget-Name">Budget Name</label>
+                        <input style="margin-top:10px ; border: 1px solid gray;" type="text" id="Budget-Name" name="Budget-Name" >
+                    </div>
+                    <div class="inputbox">
+                        <label class="Budget-Status" >Budget Status</label>
+                        <!-- <input style="border: 1px solid gray;" type="text" > -->
+                        <Select style="margin-top:10px ; border: 1px solid gray;">
+                            <option value="Draft">Draft</option>
+                            <option value="Draft">Draft</option>
+                            <option value="Draft">Draft</option>
+                            <option value="Draft">Draft</option>
+                        </Select>
+                    </div>
+               
+                    <div class="inputbox">
+                        <label class="Start-Date">Start Date</label>
+                        <input style=" margin-top:10px ;   border: 1px solid gray;" type="Date" >
+                    </div>
+                    <div class="inputbox">
+                        <label class="inputtext">End Date</label>
+                        <input style="margin-top:10px ;  border: 1px solid gray;" type="date" >
+                    </div>
+                
+                    <div class="inputbox">
+                        <label class="Version">Version</label>
+                        <Select style="margin-top:10px ;  border: 1px solid gray; ">
+                            <option value="">select version</option>
+                            <option value="">select version</option>
+                            <option value="">select version</option>
+                            <option value="">select version</option>
+                        </Select>
+                    </div>
+                    <div class="inputbox">
+                        <label class="inputtext">Budget Amount</label>
+                        <input style="margin-top:10px ;  border: 1px solid gray;" type="text" >
+                    </div>
+                <div class="nextbutton">
+                    <button class="button" >Next Step</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
